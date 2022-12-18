@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>RingIt: Ring-Ordering Casual Photos of a Temporal Event</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+</head>
+<body>
+    <h1>RingIt: Ring-Ordering Casual Photos of a Temporal Event</h1>
+    <div class="authors">
+        <a href="https://www.elor.sites.tau.ac.il/">Hadar Averbuch-Elor </a> and
+         <a href="http://www.cs.tau.ac.il/~dcor/">Daniel Cohen-Or</a>
+    </div>
+    <div class="institutions">
+        Tel Aviv University
+    </div>
+    <div class="conference">
+        <a href="http://tog.acm.org/">ACM Transactions on Graphics</a>
+    </div>
+ 
+   <div class="teaser">
+        <table class="results">
+            <tr>
+                <td><img alt="Results 1" src="teaser1.png" height="200"/></td>
+				<td><img alt="Results 2" src="teaser2.png" height="200"/></td>
+				<td><img alt="Results 3" src="teaser3.png" height="200"/></td>
+           <!--     <td><img alt="Results 2" src="teaser2lr.png" /></td>
+                <td><img alt="Results 3" src="teaser3lr.png" /></td>
+                <td><img alt="Results 4" src="teaser4lr.png" /></td> -->
+            </tr>
+            <tr>
+                <td>(a)</td>
+				<td>(b)</td>
+				<td>(c)</td>
+            </tr>
+        </table>
+        <p>
+        Figure: (a) Given a set of unorganized casual images capturing a dynamic event, we first (b) compute a full
+all-pairs dissimilarity matrix. Next, (c) we define a sparse refined dissimilarity among the KNN. 
+Finally, (d) a spectral analysis reveals the ring order of the images.
+        </p>
+    </div> 
+
+    <h2>Abstract</h2>
+    <p>
+	The multitude of cameras constantly present nowadays
+redefined the meaning of capturing an event and the meaning
+of sharing this event with others. The images are frequently uploaded to a
+common platform, and the image-navigation challenge naturally arises. We introduce
+<i>RingIt </i> - a spectral technique for recovering the spatial order of a set of
+still images capturing an event taken by a group of people situated around the
+event. We assume a nearly instantaneous event, e.g., an interesting
+moment in a performance captured by the digital cameras and smartphones
+of the surrounding crowd. The ordering method extracts the K-nearest neighbors (KNN) of each image from
+a rough all-pairs dissimilarity estimate. The KNN dissimilarities are refined to
+form a sparse Weighted Laplacian, and a spectral analysis then yields a ring angle
+for each image. The spatial order is recovered by sorting the obtained ring
+angles. The ordering of the unorganized set of images allows for a sequential display
+of the captured object. We demonstrate our technique on a number of sets
+capturing momentary events, where the images were acquired with low-quality
+consumer-cameras by a group of people positioned around the event.
+    </p>
+
+    <h2>Results</h2> 
+	Click on the links below to view the ring-ordering and bullet-time displays of our casual datasets.<br /><br />
+	<a href="https://www.dropbox.com/s/tcky2uzxss7gt94/BackBalance.mp4?dl=0" target="_blank">BackBalance</a> <br />
+	<a href="https://www.dropbox.com/s/yjg4s0mp4yxsxr0/BikeAndStatue.mp4?dl=0" target="_blank">Bike&Statue</a> <br />
+	<a href="https://www.dropbox.com/s/n440tvpzymu6zqt/BottomUp.mp4?dl=0" target="_blank">BottomUp</a> <br />
+	<a href="https://www.dropbox.com/s/qful2g5k9f2h1ee/Candlestick.mp4?dl=0" target="_blank">Candlestick</a> <br />
+	<a href="https://www.dropbox.com/s/jy20yamg4hpteyb/FrontHang.mp4?dl=0" target="_blank">FrontHang</a> <br />
+	<a href="https://www.dropbox.com/s/07qc64y3c66jb0v/FrontSwan.mp4?dl=0" target="_blank">FrontSwan</a> <br />
+	<a href="https://www.dropbox.com/s/aabxfu9lvbmslg2/Headstand.mp4?dl=0" target="_blank">Headstand</a> <br />
+	<a href="https://www.dropbox.com/s/qoxlrd3pyujpock/ShoulderBalance.mp4?dl=0" target="_blank">ShoulderBalance</a> <br />
+	<a href="https://www.dropbox.com/s/wduc0cavtd8n90d/SitOnFeet.mp4?dl=0" target="_blank">SitOnFeet</a> <br />
+	<a href="https://www.dropbox.com/s/sq0uestt938poor/StandOnFeet.mp4?dl=0" target="_blank">StandOnFeet</a> <br />
+	
+    <h2>Resources</h2>
+	<a href="RingIt.pdf">Paper</a> (PDF)<br />
+	<a href="Supplementary.pdf">Supplementary Material</a> (PDF)<br />
+	<a href="Datasets.zip">Datasets</a> <br />
+
+
+
+    <h2>BibTex Reference</h2>
+        <pre>@article{elor2015ringit,
+    author = {Hadar Averbuch-Elor and Daniel Cohen-Or},
+    title = {RingIt: Ring-Ordering Casual Photos of a Temporal Event},
+    journal   = {ACM Transactions on Graphics},
+    volume    = {34},
+    number    = {3},
+    article     = {33},
+    year = 2015,
+}
+        </pre>
+
+     <h2>Presentation slides</h2>
+    <p>
+        To appear later...
+       <!-- <a href="slides.pptx">PPTX</a> (14MB)<br /> -->
+    </p>
+
+    <h2>Acknowledgements</h2>
+    <p>
+This work supported by the Israel Science Foundation.
+    </p>
+
+    <!-- <h2>Links</h2>
+    <p>
+    </p> -->
+
+    <p>
+    Last update to the page: February 20, 2015.<br />
+   <!--  Last update to the code: November 23, 2013. -->
+    </p>
+
+</body>
+</html>
